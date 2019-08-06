@@ -1180,3 +1180,10 @@
     });
   }
 </script>
+<script>
+  if ((typeof optOutGa === 'undefined') && document.cookie.indexOf('sh_optOutGA=') === -1) {
+    ga('create', 'UA-77358969-1');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+  }
+</script>
